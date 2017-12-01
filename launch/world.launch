@@ -49,7 +49,7 @@
 
   <arg name="model" default="$(find lucrezio_description)/urdf/lucrezio_with_logical.urdf.xacro"/>
 
-  <!-- push robot_description to factory and spawn robot in gazebo -->
+  <!-- push robot_description to factory and spawn robot in gazebo 
   <param name="robot_description" command="$(find xacro)/xacro.py $(arg model)" />
   <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model"
         args="-z 1.0 -unpause -urdf -model robot -param robot_description" respawn="false" output="screen" />
@@ -61,10 +61,6 @@
   <node pkg="robot_state_publisher" type="robot_state_publisher"  name="robot_state_publisher">
     <param name="publish_frequency" type="double" value="30.0" />
   </node>
-
-  <!-- Run the controller manager -->
-  <rosparam command="load" file="$(find lucrezio_description)/config/diffdrive.yaml" ns="lucrezio" />
-  <node name="lucrezio_controller_spawner" pkg="controller_manager" type="spawner" args="lucrezio --shutdown-timeout 3"/>
-
+-->
 
 </launch>

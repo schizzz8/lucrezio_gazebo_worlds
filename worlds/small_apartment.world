@@ -1374,7 +1374,7 @@
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-              <uri>/home/dede/lucia/workspace/src/cob_simulation/cob_gazebo_objects/Media/models/table_tv.dae</uri>
+              <uri>/home/dede/workspaces/temp/src/cob_gazebo_objects/Media/models/table_tv.dae</uri>
             </mesh>
           </geometry>
           <cast_shadows>1</cast_shadows>
@@ -1386,7 +1386,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/dede/lucia/workspace/src/cob_simulation/cob_gazebo_objects/Media/models/table_tv.dae</uri>
+              <uri>/home/dede/workspaces/temp/src/cob_gazebo_objects/Media/models/table_tv.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -1463,7 +1463,7 @@
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-              <uri>/home/dede/lucia/workspace/src/cob_simulation/cob_gazebo_objects/Media/models/tv_samsung.dae</uri>
+              <uri>/home/dede/workspaces/temp/src/cob_gazebo_objects/Media/models/tv_samsung.dae</uri>
             </mesh>
           </geometry>
           <cast_shadows>1</cast_shadows>
@@ -1562,7 +1562,7 @@
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-              <uri>/home/dede/lucia/workspace/src/cob_simulation/cob_gazebo_objects/Media/materials/textures/couch_back.dae</uri>
+              <uri>/home/dede/workspaces/temp/src/cob_gazebo_objects/Media/materials/textures/couch_back.dae</uri>
             </mesh>
           </geometry>
           <cast_shadows>1</cast_shadows>
@@ -1573,7 +1573,7 @@
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-              <uri>/home/dede/lucia/workspace/src/cob_simulation/cob_gazebo_objects/Media/materials/textures/couch_middle.dae</uri>
+              <uri>/home/dede/workspaces/temp/src/cob_gazebo_objects/Media/materials/textures/couch_middle.dae</uri>
             </mesh>
           </geometry>
           <cast_shadows>1</cast_shadows>
@@ -1584,7 +1584,7 @@
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-              <uri>/home/dede/lucia/workspace/src/cob_simulation/cob_gazebo_objects/Media/materials/textures/couch_left_side.dae</uri>
+              <uri>/home/dede/workspaces/temp/src/cob_gazebo_objects/Media/materials/textures/couch_left_side.dae</uri>
             </mesh>
           </geometry>
           <cast_shadows>1</cast_shadows>
@@ -1595,7 +1595,7 @@
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-              <uri>/home/dede/lucia/workspace/src/cob_simulation/cob_gazebo_objects/Media/materials/textures/couch_back.dae</uri>
+              <uri>/home/dede/workspaces/temp/src/cob_gazebo_objects/Media/materials/textures/couch_back.dae</uri>
             </mesh>
           </geometry>
           <cast_shadows>1</cast_shadows>
@@ -1606,7 +1606,7 @@
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-              <uri>/home/dede/lucia/workspace/src/cob_simulation/cob_gazebo_objects/Media/materials/textures/couch_middle.dae</uri>
+              <uri>/home/dede/workspaces/temp/src/cob_gazebo_objects/Media/materials/textures/couch_middle.dae</uri>
             </mesh>
           </geometry>
           <cast_shadows>1</cast_shadows>
@@ -1617,7 +1617,7 @@
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-              <uri>/home/dede/lucia/workspace/src/cob_simulation/cob_gazebo_objects/Media/materials/textures/couch_right_side.dae</uri>
+              <uri>/home/dede/workspaces/temp/src/cob_gazebo_objects/Media/materials/textures/couch_right_side.dae</uri>
             </mesh>
           </geometry>
           <cast_shadows>1</cast_shadows>
@@ -2653,7 +2653,7 @@
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-              <uri>/home/dede/lucia/workspace/src/cob_simulation/cob_gazebo_objects/Media/models/chair_ikea_borje.dae</uri>
+              <uri>/home/dede/workspaces/temp/src/cob_gazebo_objects/Media/models/chair_ikea_borje.dae</uri>
             </mesh>
           </geometry>
           <cast_shadows>1</cast_shadows>
@@ -2665,7 +2665,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/dede/lucia/workspace/src/cob_simulation/cob_gazebo_objects/Media/models/chair_ikea_borje.dae</uri>
+              <uri>/home/dede/workspaces/temp/src/cob_gazebo_objects/Media/models/chair_ikea_borje.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -2742,7 +2742,7 @@
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-              <uri>/home/dede/lucia/workspace/src/cob_simulation/cob_gazebo_objects/Media/models/chair_ikea_borje.dae</uri>
+              <uri>/home/dede/workspaces/temp/src/cob_gazebo_objects/Media/models/chair_ikea_borje.dae</uri>
             </mesh>
           </geometry>
           <cast_shadows>1</cast_shadows>
@@ -2754,7 +2754,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/dede/lucia/workspace/src/cob_simulation/cob_gazebo_objects/Media/models/chair_ikea_borje.dae</uri>
+              <uri>/home/dede/workspaces/temp/src/cob_gazebo_objects/Media/models/chair_ikea_borje.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -2831,7 +2831,7 @@
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-              <uri>/home/dede/lucia/workspace/src/cob_simulation/cob_gazebo_objects/Media/models/bed.dae</uri>
+              <uri>/home/dede/workspaces/temp/src/cob_gazebo_objects/Media/models/bed.dae</uri>
             </mesh>
           </geometry>
           <cast_shadows>1</cast_shadows>
@@ -2843,7 +2843,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/dede/lucia/workspace/src/cob_simulation/cob_gazebo_objects/Media/models/bed.dae</uri>
+              <uri>/home/dede/workspaces/temp/src/cob_gazebo_objects/Media/models/bed.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -2920,7 +2920,7 @@
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-              <uri>/home/dede/lucia/workspace/src/cob_simulation/cob_gazebo_objects/Media/models/cabinet_ikea_malm_small.dae</uri>
+              <uri>/home/dede/workspaces/temp/src/cob_gazebo_objects/Media/models/cabinet_ikea_malm_small.dae</uri>
             </mesh>
           </geometry>
           <cast_shadows>1</cast_shadows>
@@ -2932,7 +2932,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/dede/lucia/workspace/src/cob_simulation/cob_gazebo_objects/Media/models/cabinet_ikea_malm_small.dae</uri>
+              <uri>/home/dede/workspaces/temp/src/cob_gazebo_objects/Media/models/cabinet_ikea_malm_small.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -3009,7 +3009,7 @@
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-              <uri>/home/dede/lucia/workspace/src/cob_simulation/cob_gazebo_objects/Media/models/cabinet_ikea_malm_big.dae</uri>
+              <uri>/home/dede/workspaces/temp/src/cob_gazebo_objects/Media/models/cabinet_ikea_malm_big.dae</uri>
             </mesh>
           </geometry>
           <cast_shadows>1</cast_shadows>
@@ -3021,7 +3021,7 @@
           <pose frame=''>0 0 0 0 0 -3.14159</pose>
           <geometry>
             <mesh>
-              <uri>/home/dede/lucia/workspace/src/cob_simulation/cob_gazebo_objects/Media/models/cabinet_ikea_malm_big.dae</uri>
+              <uri>/home/dede/workspaces/temp/src/cob_gazebo_objects/Media/models/cabinet_ikea_malm_big.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
