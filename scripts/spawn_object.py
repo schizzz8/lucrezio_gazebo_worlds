@@ -172,9 +172,9 @@ if __name__ == "__main__":
 
         # get file location
         try:
-            file_location = roslib.packages.get_pkg_dir('lucrezio_gazebo_worlds') + '/models/' + model_string + '/model.' + model_type
+            file_location = roslib.packages.get_pkg_dir('lucrezio_gazebo_objects') + '/models/' + model_string + '/model.' + model_type
         except roslib.packages.InvalidROSPkgException:
-            rospy.logerr("No model package found for " + key + ": " + lucrezio_gazebo_worlds + " does not exist in ROS_PACKAGE_PATH")
+            rospy.logerr("No model package found for " + key + ": " + lucrezio_gazebo_objects + " does not exist in ROS_PACKAGE_PATH")
             continue
 
         # open file for urdf.xacro or urdf/sdf/model
