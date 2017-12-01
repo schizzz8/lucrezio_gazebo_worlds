@@ -1,66 +1,33 @@
 <?xml version="1.0"?>
 <launch>
 
-  <!-- these are the arguments you can pass this launch file, for example paused:=true -->
-  <arg name="paused" default="false"/>
-  <arg name="use_sim_time" default="true"/>
-  <arg name="extra_gazebo_args" default=""/>
-  <arg name="gui" default="true"/>
-  <arg name="recording" default="false"/>
-  <!-- Note that 'headless' is currently non-functional.  See gazebo_ros_pkgs issue #491 (-r arg does not disable
-       rendering, but instead enables recording). The arg definition has been left here to prevent breaking downstream
-       launch files, but it does nothing. -->
-  <arg name="headless" default="false"/>
-  <arg name="debug" default="false"/>
-  <arg name="physics" default="ode"/>
-  <arg name="verbose" default="false"/>
-  <arg name="world_name" default="$(find lucrezio_gazebo_worlds)/worlds/small_apartment.world"/> <!-- Note: the world_name is with respect to GAZEBO_RESOURCE_PATH environmental variable -->
-  <arg name="respawn_gazebo" default="false"/>
-  <arg name="use_clock_frequency" default="false"/>
-  <arg name="pub_clock_frequency" default="100"/>
+	<!-- define arguments -->
+	<arg name="world_name" default="worlds/empty.world"/>
+	<arg name="debug" default="false" />
+	<arg name="headless" default="false" />
+	<arg name="paused" default="false"/>
+	<arg name="use_sim_time" default="true"/>
+	<arg name="gui" default="true"/>
 
-  <!-- set use_sim_time flag -->
-  <group if="$(arg use_sim_time)">
-    <param name="/use_sim_time" value="true" />
-  </group>
+	<!-- upload default configuration parameters -->
+	<include file="$(find lucrezio_gazebo_worlds)/launch/upload_object_locations.launch"/>
 
-  <!-- set command arguments -->
-  <arg unless="$(arg paused)" name="command_arg1" value=""/>
-  <arg     if="$(arg paused)" name="command_arg1" value="-u"/>
-  <arg unless="$(arg recording)" name="command_arg2" value=""/>
-  <arg     if="$(arg recording)" name="command_arg2" value="-r"/>
-  <arg unless="$(arg verbose)" name="command_arg3" value=""/>
-  <arg     if="$(arg verbose)" name="command_arg3" value="--verbose"/>
-  <arg unless="$(arg debug)" name="script_type" value="gzserver"/>
-  <arg     if="$(arg debug)" name="script_type" value="debug"/>
-
-  <!-- start gazebo server-->
-  <group if="$(arg use_clock_frequency)">
-    <param name="gazebo/pub_clock_frequency" value="$(arg pub_clock_frequency)" />
-  </group>
-  <node name="gazebo" pkg="gazebo_ros" type="$(arg script_type)" respawn="$(arg respawn_gazebo)" output="screen"
-	args="$(arg command_arg1) $(arg command_arg2) $(arg command_arg3) -e $(arg physics) $(arg extra_gazebo_args) $(arg world_name)" />
-	
-  <!-- start gazebo client -->
-  <group if="$(arg gui)">
-    <node name="gazebo_gui" pkg="gazebo_ros" type="gzclient" respawn="false" output="screen"/>
-  </group>
+	<!-- start gazebo with empty world -->
+	<include file="$(find gazebo_ros)/launch/empty_world.launch">
+		<arg name="world_name" value="$(arg world_name)"/>
+		<arg name="debug" value="$(arg debug)" />
+		<arg name="headless" value="$(arg headless)"/>
+		<arg name="paused" value="$(arg paused)" />
+		<arg name="use_sim_time" value="$(arg use_sim_time)" />
+		<arg name="gui" value="$(arg gui)" />
+	</include>
 
 
-  <arg name="model" default="$(find lucrezio_description)/urdf/lucrezio_with_logical.urdf.xacro"/>
+  <!-- Spawn the apartment into Gazebo -->
+  <node name="spawn_sdf_1" pkg="gazebo_ros" type="spawn_model" args="-file $(find lucrezio_gazebo_worlds)/models/small_apartment_2/model.sdf -sdf -model small_apartment_2" />
 
-  <!-- push robot_description to factory and spawn robot in gazebo 
-  <param name="robot_description" command="$(find xacro)/xacro.py $(arg model)" />
-  <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model"
-        args="-z 1.0 -unpause -urdf -model robot -param robot_description" respawn="false" output="screen" />
+  <!-- Spawn the objects into Gazebo -->
+  <node name="spawn_objects" pkg="lucrezio_gazebo_worlds" type="spawn_object.py" args="all"/>
 
-  <node pkg="tf" type="static_transform_publisher" name="depth_camera_link_broadcaster" args="0 0 0 -1.57 0 -1.57 camera_link camera_depth_optical_frame 100" />
-
-  <node pkg="joint_state_publisher" type="joint_state_publisher" name="joint_state_publisher" />
-
-  <node pkg="robot_state_publisher" type="robot_state_publisher"  name="robot_state_publisher">
-    <param name="publish_frequency" type="double" value="30.0" />
-  </node>
--->
 
 </launch>
