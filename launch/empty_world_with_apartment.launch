@@ -12,7 +12,8 @@
   
   <!-- Spawn the apartment into Gazebo -->
   <arg name="model" default="test_apartment" />
-  <node name="spawn_sdf" pkg="gazebo_ros" type="spawn_model" args="-sdf -file $(find lucrezio_gazebo_objects)/models/$(arg model)/model.sdf -model $(arg model) -x 3.9269 -y 2.8873 -Y 1.57" />
+  <node name="spawn_sdf" pkg="gazebo_ros" type="spawn_model" 
+        args="-sdf -file $(find lucrezio_gazebo_objects)/models/$(arg model)/model.sdf -model $(arg model) -x 3.9269 -y 2.8873 -Y 1.57" />
 
 
 	<!-- Upload object locations and spawn them into Gazebo-->
