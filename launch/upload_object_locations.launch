@@ -1,6 +1,9 @@
 <?xml version="1.0"?>
 <launch>
 
+
+  <env name="GAZEBO_MODEL_PATH" value="$(find lucrezio_gazebo_objects)/models"/>
+
   <!-- send objects locations to parameter server -->
   <rosparam command="load" ns="objects" file="$(find lucrezio_gazebo_objects)/config/object_locations.yaml"/>
   <rosparam command="load" ns="object_groups" file="$(find lucrezio_gazebo_objects)/config/object_groups.yaml"/>
